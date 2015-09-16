@@ -1,0 +1,27 @@
+{
+  "name": "react-field-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/square/react-field-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/square/react-field-kit/issues"
+  },
+  "homepage": "https://github.com/square/react-field-kit",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "field-kit": "^2.0.1"
+  }
+}
