@@ -1,27 +1,45 @@
 {
   "name": "react-field-kit",
   "version": "1.0.0",
-  "description": "",
+  "author": "Square, Inc.",
+  "license": "Apache-2.0",
+  "description": "Components to effectively manage text entry in React using FieldKit.",
   "main": "index.js",
   "scripts": {
+    "build": "browserify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
+    "watch": "watchify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/square/react-field-kit.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/square/react-field-kit/issues"
-  },
-  "homepage": "https://github.com/square/react-field-kit",
+  "repository": "square/react-field-kit.git",
+  "files": [
+    "src/"
+  ],
+  "keywords": [
+    "react",
+    "plugin",
+    "component",
+    "input",
+    "web",
+    "formatter",
+    "creditcard",
+    "credit-card",
+    "credit card",
+    "ssn",
+    "social",
+    "expiration",
+    "date",
+    "field",
+    "fieldkit",
+    "field-kit"
+  ],
   "devDependencies": {
     "browserify": "^11.0.1",
     "react": "^0.13.3",
-    "reactify": "^1.1.1"
+    "reactify": "^1.1.1",
+    "watchify": "^3.4.0"
   },
   "dependencies": {
-    "field-kit": "^2.0.1"
+    "field-kit": "^2.0.1",
+    "object-assign": "^4.0.1"
   }
 }
