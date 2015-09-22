@@ -1,5 +1,5 @@
 const React = require('react');
-const FieldKitExpiryDateInput = require('../../src/FieldKitExpiryDateInput.jsx');
+const ExpiryDateField = require('../../src/ExpiryDateField.jsx');
 
 class Input3 extends React.Component {
   constructor() {
@@ -24,7 +24,7 @@ class Input3 extends React.Component {
   render() {
     return (
       <div>
-        <FieldKitExpiryDateInput value={this.state.rawValue}
+        <ExpiryDateField value={this.state.rawValue}
                                  unfocusedPlaceholder="Expiration Date"
                                  focusedPlaceholder="11/22"
                                  onChange={this.onChange.bind(this)} />

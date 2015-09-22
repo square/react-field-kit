@@ -1,5 +1,5 @@
 const React = require('react');
-const FieldKitInput = require('../../src/FieldKitInput.jsx');
+const TextField = require('../../src/TextField.jsx');
 
 class Input1 extends React.Component {
   constructor() {
@@ -24,7 +24,7 @@ class Input1 extends React.Component {
   render() {
     return (
       <div>
-        <FieldKitInput value={this.state.rawValue}
+        <TextField value={this.state.rawValue}
                        placeholder="Name"
                        onChange={this.onChange.bind(this)} />
         <p>RAW: {this.state.rawValue}</p>

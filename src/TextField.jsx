@@ -1,7 +1,7 @@
 const React = require('react');
 const FieldKit = require('field-kit');
 
-class FieldKitInput extends React.Component {
+class TextField extends React.Component {
   constructor() {
     super();
   }
@@ -103,8 +103,8 @@ class FieldKitInput extends React.Component {
   }
 }
 
-FieldKitInput.propTypes = FieldKitInput.getBasePropTypes();
+TextField.propTypes = TextField.getBasePropTypes();
 
-FieldKitInput.defaultProps = FieldKitInput.getBaseDefaultProps();
+TextField.defaultProps = TextField.getBaseDefaultProps();
 
-module.exports = FieldKitInput;
+module.exports = TextField;

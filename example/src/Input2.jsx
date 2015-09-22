@@ -1,5 +1,5 @@
 const React = require('react');
-const FieldKitCreditCardInput = require('../../src/FieldKitCreditCardInput.jsx');
+const CreditCardField = require('../../src/CreditCardField.jsx');
 
 class Input2 extends React.Component {
   constructor() {
@@ -31,7 +31,7 @@ class Input2 extends React.Component {
   render() {
     return (
       <div>
-        <FieldKitCreditCardInput value={this.state.rawValue}
+        <CreditCardField value={this.state.rawValue}
                                  cardTypeDidChange={this.cardTypeDidChange.bind(this)}
                                  unfocusedPlaceholder="Credit Card"
                                  focusedPlaceholder="1234 1234 1234 1234"

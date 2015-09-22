@@ -1,6 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 const React = require('react');
-const FieldKitInput = require('../../src/FieldKitInput.jsx');
+const TextField = require('../../src/TextField.jsx');
 
 var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){Input1[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;Input1.prototype=Object.create(____SuperProtoOf____Class0);Input1.prototype.constructor=Input1;Input1.__superConstructor__=____Class0;
   function Input1() {"use strict";
@@ -25,7 +25,7 @@ var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____C
   Object.defineProperty(Input1.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
     return (
       React.createElement("div", null, 
-        React.createElement(FieldKitInput, {value: this.state.rawValue, 
+        React.createElement(TextField, {value: this.state.rawValue, 
                        placeholder: "Name", 
                        onChange: this.onChange.bind(this)}), 
         React.createElement("p", null, "RAW: ", this.state.rawValue), 
@@ -37,9 +37,9 @@ var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____C
 
 module.exports = Input1;
 
-},{"../../src/FieldKitInput.jsx":165,"react":162}],2:[function(require,module,exports){
+},{"../../src/TextField.jsx":165,"react":162}],2:[function(require,module,exports){
 const React = require('react');
-const FieldKitCreditCardInput = require('../../src/FieldKitCreditCardInput.jsx');
+const CreditCardField = require('../../src/CreditCardField.jsx');
 
 var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){Input2[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;Input2.prototype=Object.create(____SuperProtoOf____Class1);Input2.prototype.constructor=Input2;Input2.__superConstructor__=____Class1;
   function Input2() {"use strict";
@@ -71,7 +71,7 @@ var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____C
   Object.defineProperty(Input2.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
     return (
       React.createElement("div", null, 
-        React.createElement(FieldKitCreditCardInput, {value: this.state.rawValue, 
+        React.createElement(CreditCardField, {value: this.state.rawValue, 
                                  cardTypeDidChange: this.cardTypeDidChange.bind(this), 
                                  unfocusedPlaceholder: "Credit Card", 
                                  focusedPlaceholder: "1234 1234 1234 1234", 
@@ -86,13 +86,13 @@ var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____C
 
 module.exports = Input2;
 
-},{"../../src/FieldKitCreditCardInput.jsx":163,"react":162}],3:[function(require,module,exports){
+},{"../../src/CreditCardField.jsx":163,"react":162}],3:[function(require,module,exports){
 const React = require('react');
-const FieldKitExpiryDateInput = require('../../src/FieldKitExpiryDateInput.jsx');
+const ExpiryDateField = require('../../src/ExpiryDateField.jsx');
 
-var ____Class5=React.Component;for(var ____Class5____Key in ____Class5){if(____Class5.hasOwnProperty(____Class5____Key)){Input3[____Class5____Key]=____Class5[____Class5____Key];}}var ____SuperProtoOf____Class5=____Class5===null?null:____Class5.prototype;Input3.prototype=Object.create(____SuperProtoOf____Class5);Input3.prototype.constructor=Input3;Input3.__superConstructor__=____Class5;
+var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____Class2.hasOwnProperty(____Class2____Key)){Input3[____Class2____Key]=____Class2[____Class2____Key];}}var ____SuperProtoOf____Class2=____Class2===null?null:____Class2.prototype;Input3.prototype=Object.create(____SuperProtoOf____Class2);Input3.prototype.constructor=Input3;Input3.__superConstructor__=____Class2;
   function Input3() {"use strict";
-    ____Class5.call(this);
+    ____Class2.call(this);
     this.state = this.getInitialState();
   }
 
@@ -113,7 +113,7 @@ var ____Class5=React.Component;for(var ____Class5____Key in ____Class5){if(____C
   Object.defineProperty(Input3.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
     return (
       React.createElement("div", null, 
-        React.createElement(FieldKitExpiryDateInput, {value: this.state.rawValue, 
+        React.createElement(ExpiryDateField, {value: this.state.rawValue, 
                                  unfocusedPlaceholder: "Expiration Date", 
                                  focusedPlaceholder: "11/22", 
                                  onChange: this.onChange.bind(this)}), 
@@ -126,7 +126,7 @@ var ____Class5=React.Component;for(var ____Class5____Key in ____Class5){if(____C
 
 module.exports = Input3;
 
-},{"../../src/FieldKitExpiryDateInput.jsx":164,"react":162}],4:[function(require,module,exports){
+},{"../../src/ExpiryDateField.jsx":164,"react":162}],4:[function(require,module,exports){
 const React = require('react');
 const Input1 = require('./Input1.jsx');
 const Input2 = require('./Input2.jsx');
@@ -27766,15 +27766,15 @@ module.exports = require('./lib/React');
 const React = require('react');
 const assign = require('object-assign');
 const FieldKit = require('field-kit');
-const FieldKitInput = require('./FieldKitInput.jsx');
+const TextField = require('./TextField.jsx');
 
-for(var FieldKitInput____Key in FieldKitInput){if(FieldKitInput.hasOwnProperty(FieldKitInput____Key)){FieldKitCreditCardInput[FieldKitInput____Key]=FieldKitInput[FieldKitInput____Key];}}var ____SuperProtoOfFieldKitInput=FieldKitInput===null?null:FieldKitInput.prototype;FieldKitCreditCardInput.prototype=Object.create(____SuperProtoOfFieldKitInput);FieldKitCreditCardInput.prototype.constructor=FieldKitCreditCardInput;FieldKitCreditCardInput.__superConstructor__=FieldKitInput;
-  function FieldKitCreditCardInput() {"use strict";
-    FieldKitInput.call(this);
+for(var TextField____Key in TextField){if(TextField.hasOwnProperty(TextField____Key)){CreditCardField[TextField____Key]=TextField[TextField____Key];}}var ____SuperProtoOfTextField=TextField===null?null:TextField.prototype;CreditCardField.prototype=Object.create(____SuperProtoOfTextField);CreditCardField.prototype.constructor=CreditCardField;CreditCardField.__superConstructor__=TextField;
+  function CreditCardField() {"use strict";
+    TextField.call(this);
   }
 
-  Object.defineProperty(FieldKitCreditCardInput.prototype,"componentDidMount",{writable:true,configurable:true,value:function() {"use strict";
-    ____SuperProtoOfFieldKitInput.componentDidMount.call(this);
+  Object.defineProperty(CreditCardField.prototype,"componentDidMount",{writable:true,configurable:true,value:function() {"use strict";
+    ____SuperProtoOfTextField.componentDidMount.call(this);
 
     if (this.props.cardMaskStrategy) {
       this.field.setCardMaskStrategy(
@@ -27787,67 +27787,67 @@ for(var FieldKitInput____Key in FieldKitInput){if(FieldKitInput.hasOwnProperty(F
     });
   }});
 
-  Object.defineProperty(FieldKitCreditCardInput.prototype,"onChange",{writable:true,configurable:true,value:function(field) {"use strict";
+  Object.defineProperty(CreditCardField.prototype,"onChange",{writable:true,configurable:true,value:function(field) {"use strict";
     const cardType = field.cardType();
     if (cardType !== this.state.cardType) {
       this.setState({ cardType:cardType });
       this.props.cardTypeDidChange(cardType);
     }
-    ____SuperProtoOfFieldKitInput.onChange.call(this,field);
+    ____SuperProtoOfTextField.onChange.call(this,field);
   }});
 
-  Object.defineProperty(FieldKitCreditCardInput.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(CreditCardField.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
     return new FieldKit.CardTextField(this.getElement());
   }});
 
 
 
-FieldKitCreditCardInput.propTypes = assign(FieldKitInput.getBasePropTypes() , {
+CreditCardField.propTypes = assign(TextField.getBasePropTypes() , {
   // CreditCardInput Specific
   cardMaskStrategy: React.PropTypes.bool,
   cardTypeDidChange: React.PropTypes.func
 });
 
-FieldKitCreditCardInput.defaultProps = assign(FieldKitInput.getBaseDefaultProps(), {
+CreditCardField.defaultProps = assign(TextField.getBaseDefaultProps(), {
   // CreditCardInput Specific
   cardTypeDidChange: function()  {}
 });
 
-module.exports = FieldKitCreditCardInput;
+module.exports = CreditCardField;
 
-},{"./FieldKitInput.jsx":165,"field-kit":6,"object-assign":7,"react":162}],164:[function(require,module,exports){
+},{"./TextField.jsx":165,"field-kit":6,"object-assign":7,"react":162}],164:[function(require,module,exports){
 const React = require('react');
 const assign = require('object-assign');
 const FieldKit = require('field-kit');
-const FieldKitInput = require('./FieldKitInput.jsx');
+const TextField = require('./TextField.jsx');
 
-for(var FieldKitInput____Key in FieldKitInput){if(FieldKitInput.hasOwnProperty(FieldKitInput____Key)){FieldKitExpiryDateInput[FieldKitInput____Key]=FieldKitInput[FieldKitInput____Key];}}var ____SuperProtoOfFieldKitInput=FieldKitInput===null?null:FieldKitInput.prototype;FieldKitExpiryDateInput.prototype=Object.create(____SuperProtoOfFieldKitInput);FieldKitExpiryDateInput.prototype.constructor=FieldKitExpiryDateInput;FieldKitExpiryDateInput.__superConstructor__=FieldKitInput;
-  function FieldKitExpiryDateInput() {"use strict";
-    FieldKitInput.call(this);
+for(var TextField____Key in TextField){if(TextField.hasOwnProperty(TextField____Key)){ExpiryDateField[TextField____Key]=TextField[TextField____Key];}}var ____SuperProtoOfTextField=TextField===null?null:TextField.prototype;ExpiryDateField.prototype=Object.create(____SuperProtoOfTextField);ExpiryDateField.prototype.constructor=ExpiryDateField;ExpiryDateField.__superConstructor__=TextField;
+  function ExpiryDateField() {"use strict";
+    TextField.call(this);
   }
 
-  Object.defineProperty(FieldKitExpiryDateInput.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(ExpiryDateField.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
     return new FieldKit.ExpiryDateField(this.getElement());
   }});
 
 
 
-FieldKitExpiryDateInput.propTypes = FieldKitInput.getBasePropTypes();
+ExpiryDateField.propTypes = TextField.getBasePropTypes();
 
-FieldKitExpiryDateInput.defaultProps = FieldKitInput.getBaseDefaultProps();
+ExpiryDateField.defaultProps = TextField.getBaseDefaultProps();
 
-module.exports = FieldKitExpiryDateInput;
+module.exports = ExpiryDateField;
 
-},{"./FieldKitInput.jsx":165,"field-kit":6,"object-assign":7,"react":162}],165:[function(require,module,exports){
+},{"./TextField.jsx":165,"field-kit":6,"object-assign":7,"react":162}],165:[function(require,module,exports){
 const React = require('react');
 const FieldKit = require('field-kit');
 
-var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____Class2.hasOwnProperty(____Class2____Key)){FieldKitInput[____Class2____Key]=____Class2[____Class2____Key];}}var ____SuperProtoOf____Class2=____Class2===null?null:____Class2.prototype;FieldKitInput.prototype=Object.create(____SuperProtoOf____Class2);FieldKitInput.prototype.constructor=FieldKitInput;FieldKitInput.__superConstructor__=____Class2;
-  function FieldKitInput() {"use strict";
-    ____Class2.call(this);
+var ____Class3=React.Component;for(var ____Class3____Key in ____Class3){if(____Class3.hasOwnProperty(____Class3____Key)){TextField[____Class3____Key]=____Class3[____Class3____Key];}}var ____SuperProtoOf____Class3=____Class3===null?null:____Class3.prototype;TextField.prototype=Object.create(____SuperProtoOf____Class3);TextField.prototype.constructor=TextField;TextField.__superConstructor__=____Class3;
+  function TextField() {"use strict";
+    ____Class3.call(this);
   }
 
-  Object.defineProperty(FieldKitInput.prototype,"componentDidMount",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"componentDidMount",{writable:true,configurable:true,value:function() {"use strict";
     this.buildFieldKitField();
     this.field.setValue(this.props.value);
 
@@ -27856,7 +27856,7 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
     this.setupEvents();
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"buildFieldKitField",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"buildFieldKitField",{writable:true,configurable:true,value:function() {"use strict";
     const field = this.getField();
 
     if (field) {
@@ -27873,7 +27873,7 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
     return this.field;
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"setUpPlaceholders",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"setUpPlaceholders",{writable:true,configurable:true,value:function() {"use strict";
     if (this.props.placeholder || this.props.unfocusedPlaceholder) {
       this.field.setUnfocusedPlaceholder(this.props.placeholder || this.props.unfocusedPlaceholder);
     }
@@ -27883,7 +27883,7 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
     }
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"setupEvents",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"setupEvents",{writable:true,configurable:true,value:function() {"use strict";
     this.field.setDelegate({
       textFieldDidBeginEditing: this.props.didBeginEditing,
       textFieldDidEndEditing: this.props.didEndEditing,
@@ -27891,28 +27891,28 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
     });
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"getField",{writable:true,configurable:true,value:function() {"use strict";
     // Allows subclasses to override
     return null;
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"getFormatter",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"getFormatter",{writable:true,configurable:true,value:function() {"use strict";
     // Allows subclasses to override
     return null;
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"getElement",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"getElement",{writable:true,configurable:true,value:function() {"use strict";
     return React.findDOMNode(this);
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"onChange",{writable:true,configurable:true,value:function(field) {"use strict";
+  Object.defineProperty(TextField.prototype,"onChange",{writable:true,configurable:true,value:function(field) {"use strict";
     // Update component value
     this.props.rawValue = field.value();
 
     if(this.props.onChange) setTimeout(function()  {return this.props.onChange(field);}.bind(this));
   }});
 
-  Object.defineProperty(FieldKitInput.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
     return (
       React.createElement("input", {type: "text", 
              onBlur: this.props.onBlur.bind(this)})
@@ -27920,7 +27920,7 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
   }});
 
   // Helper method for subclasses
-  Object.defineProperty(FieldKitInput,"getBasePropTypes",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField,"getBasePropTypes",{writable:true,configurable:true,value:function() {"use strict";
     return {
       rawValue: React.PropTypes.string,
       value: React.PropTypes.string,
@@ -27935,7 +27935,7 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
   }});
 
   // Helper method for subclasses
-  Object.defineProperty(FieldKitInput,"getBaseDefaultProps",{writable:true,configurable:true,value:function() {"use strict";
+  Object.defineProperty(TextField,"getBaseDefaultProps",{writable:true,configurable:true,value:function() {"use strict";
     return {
       onBlur: function()  {},
       didBeginEditing: function()  {},
@@ -27944,10 +27944,10 @@ var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____C
   }});
 
 
-FieldKitInput.propTypes = FieldKitInput.getBasePropTypes();
+TextField.propTypes = TextField.getBasePropTypes();
 
-FieldKitInput.defaultProps = FieldKitInput.getBaseDefaultProps();
+TextField.defaultProps = TextField.getBaseDefaultProps();
 
-module.exports = FieldKitInput;
+module.exports = TextField;
 
 },{"field-kit":6,"react":162}]},{},[4]);

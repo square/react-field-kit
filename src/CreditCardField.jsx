@@ -1,9 +1,9 @@
 const React = require('react');
 const assign = require('object-assign');
 const FieldKit = require('field-kit');
-const FieldKitInput = require('./FieldKitInput.jsx');
+const TextField = require('./TextField.jsx');
 
-class FieldKitCreditCardInput extends FieldKitInput {
+class CreditCardField extends TextField {
   constructor() {
     super();
   }
@@ -37,15 +37,15 @@ class FieldKitCreditCardInput extends FieldKitInput {
 }
 
 
-FieldKitCreditCardInput.propTypes = assign(FieldKitInput.getBasePropTypes() , {
+CreditCardField.propTypes = assign(TextField.getBasePropTypes() , {
   // CreditCardInput Specific
   cardMaskStrategy: React.PropTypes.bool,
   cardTypeDidChange: React.PropTypes.func
 });
 
-FieldKitCreditCardInput.defaultProps = assign(FieldKitInput.getBaseDefaultProps(), {
+CreditCardField.defaultProps = assign(TextField.getBaseDefaultProps(), {
   // CreditCardInput Specific
   cardTypeDidChange: () => {}
 });
 
-module.exports = FieldKitCreditCardInput;
+module.exports = CreditCardField;
