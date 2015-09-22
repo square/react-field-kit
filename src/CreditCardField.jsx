@@ -9,7 +9,7 @@ class CreditCardField extends TextField {
   }
 
   componentDidMount() {
-    super();
+    super.componentDidMount();
 
     if (this.props.cardMaskStrategy) {
       this.field.setCardMaskStrategy(
@@ -28,7 +28,7 @@ class CreditCardField extends TextField {
       this.setState({ cardType });
       this.props.cardTypeDidChange(cardType);
     }
-    super(field);
+    super.onChange(field);
   }
 
   getField() {
