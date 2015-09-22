@@ -2,13 +2,13 @@
 
 [FieldKit][FieldKit] provides real-time, text field formatting as users type. It simplifies input formatting and creates a more polished experience for users, while outputting standardized data.
 
-Use [FieldKit][FieldKit] with React without the hard work.
+Use [FieldKit][FieldKit] in React without the hard work.
 
 ## Components
 
 - [x] TextField
 - [x] CardTextField
-- [ ] ExpiryDateField
+- [x] ExpiryDateField
 - [ ] NumberFormatter
 - [ ] SocialSecurityNumberFormatter
 - [ ] PhoneFormatter
