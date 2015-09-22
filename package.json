@@ -4,14 +4,17 @@
   "author": "Square, Inc.",
   "license": "Apache-2.0",
   "description": "Components to effectively manage text entry in React using FieldKit.",
-  "main": "index.js",
+  "main": "lib/TextField.js",
   "scripts": {
+    "prepublish": "npm run package",
+    "package": "babel src --out-dir lib",
     "build": "browserify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
     "watch": "watchify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "square/react-field-kit.git",
   "files": [
+    "lib/",
     "src/"
   ],
   "keywords": [
@@ -33,6 +36,7 @@
     "field-kit"
   ],
   "devDependencies": {
+    "babel": "^5.8.23",
     "browserify": "^11.0.1",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
