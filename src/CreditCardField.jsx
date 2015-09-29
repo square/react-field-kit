@@ -11,7 +11,7 @@ class CreditCardField extends TextField {
   componentDidMount() {
     super.componentDidMount();
 
-    if (this.props.cardMaskStrategy) {
+    if(this.props.cardMaskStrategy) {
       this.field.setCardMaskStrategy(
         FieldKit.CardTextField.CardMaskStrategy.DoneEditing
       );
@@ -24,7 +24,7 @@ class CreditCardField extends TextField {
 
   onChange(field) {
     const cardType = field.cardType();
-    if (cardType !== this.state.cardType) {
+    if(cardType !== this.state.cardType) {
       this.setState({ cardType });
       this.props.cardTypeDidChange(cardType);
     }
@@ -35,7 +35,6 @@ class CreditCardField extends TextField {
     return new FieldKit.CardTextField(this.getElement());
   }
 }
-
 
 CreditCardField.propTypes = assign(TextField.getBasePropTypes() , {
   // CreditCardInput Specific
