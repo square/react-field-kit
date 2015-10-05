@@ -10,7 +10,7 @@
     "package": "babel src --out-dir lib",
     "build": "browserify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
     "watch": "watchify -t [ reactify --es6 ] example/src/app.jsx -o example/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": "square/react-field-kit.git",
   "files": [
@@ -37,7 +37,9 @@
   ],
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-jest": "^5.3.0",
     "browserify": "^11.0.1",
+    "jest-cli": "0.5.3",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
     "watchify": "^3.4.0"
@@ -45,5 +47,12 @@
   "dependencies": {
     "field-kit": "^2.0.1",
     "object-assign": "^4.0.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-tools"
+    ]
   }
 }
