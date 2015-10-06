@@ -1,6 +1,6 @@
 {
   "name": "react-field-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Square, Inc.",
   "license": "Apache-2.0",
   "description": "Components to effectively manage text entry in React using FieldKit.",
