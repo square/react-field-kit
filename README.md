@@ -1,4 +1,4 @@
-# FieldKit React Components
+# FieldKit React Components <a href="https://travis-ci.org/square/react-field-kit"><img src="https://travis-ci.org/square/react-field-kit.svg?branch=master"></a>
 
 [FieldKit][FieldKit] provides real-time, text field formatting as users type. It simplifies input formatting and creates a more polished experience for users, while outputting standardized data.
 
