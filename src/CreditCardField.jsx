@@ -4,10 +4,6 @@ const FieldKit = require('field-kit');
 const TextField = require('./TextField.jsx');
 
 class CreditCardField extends TextField {
-  constructor() {
-    super();
-  }
-
   componentDidMount() {
     super.componentDidMount();
 
