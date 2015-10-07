@@ -11,7 +11,7 @@ Use [FieldKit][FieldKit] in React without the hard work.
 - [x] ExpiryDateField
 - [ ] NumberFormatter
 - [ ] SocialSecurityNumberFormatter
-- [ ] PhoneFormatter
+- [x] PhoneFormatter
 
 ## Demo
 See examples of React FieldKit in action in [the example folder][example].

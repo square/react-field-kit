@@ -1,7 +1,7 @@
 const React = require('react');
-const TextField = require('../../src/TextField.jsx');
+const ExpiryDateField = require('../../src/ExpiryDateField.jsx');
 
-class Input1 extends React.Component {
+class ExpiryDateFieldInput extends React.Component {
   constructor() {
     super();
     this.state = this.getInitialState();
@@ -24,9 +24,10 @@ class Input1 extends React.Component {
   render() {
     return (
       <div>
-        <TextField value={this.state.rawValue}
-                       placeholder="Name"
-                       onChange={this.onChange.bind(this)} />
+        <ExpiryDateField value={this.state.rawValue}
+                                 unfocusedPlaceholder="Expiration Date"
+                                 focusedPlaceholder="11/22"
+                                 onChange={this.onChange.bind(this)} />
         <p>RAW: {this.state.rawValue}</p>
         <p>FORMATTED: {this.state.formattedValue}</p>
       </div>
@@ -34,4 +35,4 @@ class Input1 extends React.Component {
   }
 }
 
-module.exports = Input1;
+module.exports = ExpiryDateFieldInput;
