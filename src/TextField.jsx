@@ -2,10 +2,6 @@ const React = require('react');
 const FieldKit = require('field-kit');
 
 class TextField extends React.Component {
-  constructor() {
-    super();
-  }
-
   componentDidMount() {
     this.buildFieldKitField();
     this.field.setValue(this.props.value);
