@@ -1,7 +1,7 @@
 const React = require('react');
 const CreditCardField = require('../../src/CreditCardField.jsx');
 
-class Input2 extends React.Component {
+class CreditCardFieldInput extends React.Component {
   constructor() {
     super();
     this.state = this.getInitialState();
@@ -44,4 +44,4 @@ class Input2 extends React.Component {
   }
 }
 
-module.exports = Input2;
+module.exports = CreditCardFieldInput;
