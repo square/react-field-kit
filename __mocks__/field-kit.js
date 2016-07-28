@@ -11,7 +11,7 @@ class FakeTextField {
   }
 }
 
-class FakeCreditCaredField extends FakeTextField {
+class FakeCreditCardField extends FakeTextField {
   constructor() {
     super();
     this.cardType = jest.genMockFn();
@@ -27,7 +27,7 @@ class FakeCreditCaredField extends FakeTextField {
 
 Object.keys(actualFieldKit).forEach(moduleKey => {
   if(moduleKey === 'CardTextField') {
-    fakeFieldKit[moduleKey] = FakeCreditCaredField;
+    fakeFieldKit[moduleKey] = FakeCreditCardField;
   } else {
     fakeFieldKit[moduleKey] = FakeTextField;
   }
