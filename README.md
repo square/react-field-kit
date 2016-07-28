@@ -10,7 +10,7 @@ Use [FieldKit][FieldKit] in React without the hard work.
 - [x] CardTextField
 - [x] ExpiryDateField
 - [ ] NumberFormatter
-- [ ] SocialSecurityNumberFormatter
+- [x] SocialSecurityNumberFormatter
 - [x] PhoneFormatter
 
 ## Demo

@@ -3,6 +3,7 @@ const TextFieldInput = require('./TextFieldInput.jsx');
 const CreditCardFieldInput = require('./CreditCardFieldInput.jsx');
 const ExpiryDateFieldInput = require('./ExpiryDateFieldInput.jsx');
 const PhoneFieldInput = require('./PhoneFieldInput.jsx');
+const SocialSecurityNumberInput = require('./SocialSecurityNumberInput.jsx');
 
 const App = React.createClass({
   render: function() {
@@ -19,6 +20,9 @@ const App = React.createClass({
 
         <h2>PhoneField</h2>
         <PhoneFieldInput />
+
+        <h2>SocialSecurityNumberInput</h2>
+        <SocialSecurityNumberInput />
       </div>
     )
   }
